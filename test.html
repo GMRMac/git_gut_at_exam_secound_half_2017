@@ -9,7 +9,46 @@
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
                 <link rel="stylesheet" type="text/css" href="/style/stylesheet.css">
-                
+                <style>.first,
+.last {
+  text-align: center;
+  line-height: 80px;
+  height: 80px;
+  background: green;
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  margin-bottom: 20px;
+}
+.first:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  transform: SkewY(2deg);
+  transform-origin: bottom left;
+  background: inherit;
+}
+.last:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  transform: SkewY(2deg);
+  transform-origin: bottom right;
+  background: inherit;
+}
+            .testing {
+  max-width: 650px;
+  height: 50px;
+  background: red;
+  -webkit-clip-path: polygon(20% 10%, 85% 30%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 0% 100%);
+}</style>
         </head>
         <body>
         <section class="navigation">
@@ -101,6 +140,7 @@
 <!-- SLIDESHOW STOPS HERE!!! --> 
 <div class="container" style="top:90px; position: relative;">
   <div class="row">
+   
     <div class="col-xl-4 col-sm-6">
       <h3>Column 1</h3>
       <p>Lorem ipsum dolor..</p>
@@ -117,8 +157,14 @@
       <p>Ut enim ad..</p>
     </div>
   </div>
-</div>
 
+
+             <div class="first">FIRST LINE</div>
+
+<div class="last">LAST LINE</div>
+             
+             
+<div class="testing">teawdwdwadawdast</div></div>
               <script>
               (function($) {
           $(function() {

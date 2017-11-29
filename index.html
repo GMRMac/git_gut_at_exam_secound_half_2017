@@ -1,153 +1,194 @@
 <!DOCTYPE html>
     <html lang="no">
         <head>
-                <title>Hjem</title>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-                <link rel="stylesheet" type="text/css" href="style/stylesheet.css"/>
+            <title>Hjem</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="style/stylesheet.css"/>
         </head>
         <body>
-        <section class="navigation">
-          <div class="nav-container">
-            <div class="brand">     
-              <a href="#"><img src="image/graphics/MainLogo.svg" height="70" style="position:relative; left:-20px;" alt="Infotech logo"></a>
+            <section class="navigation">
+                <div class="nav-container">
+                    <div class="brand">     
+                        <a href="#"><img src="image/graphics/MainLogo.svg" height="70" style="position:relative; left:-20px;" alt="Infotech logo"></a>
+                    </div>
+                    <nav>
+                        <div class="nav-mobile">
+                            <a id="nav-toggle" href="#!"><span></span></a>
+                        </div>
+                        <ul class="nav-list" >
+                            <li>
+                                <a href="#.html"class="liIconBottom">Hjem</a>
+                            </li>
+                            <li>
+                                <a href="#.html"class="liIconBottom">Produkter og tenester</a>
+                            </li>
+                            <li>
+                                <a href="#.html"class="liIconBottom">kontakt oss</a>
+                            </li>
+                        </ul>
+                        <ul class="nav-list" >
+                            <li class="liIconTop">
+                                <a href="#.html"><img src="image/graphics/questionmarkIcon.svg" height="30" class="iconTop">Spørsmål?</a>
+                            </li>
+                            <li class="liIconTop">
+                                <a href="#.html"><img src="image/graphics/loginnIcon.svg" height="30" class="iconTop">Logg inn</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <div class="whiteSpace"></div>
+            <!-- SLIDESHOW STARTS HERE!! -->
+            <div id="slides" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#slides" data-slide-to="0" class="active"></li>
+                    <li data-target="#slides" data-slide-to="1"></li>
+                    <li data-target="#slides" data-slide-to="2"></li>
+                </ul>
+            <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/picture/bannerPictureOne16to4_Black25%25.jpg" alt="Los Angeles">
+                        <div class="carousel-caption">
+                            <h1>Los Angeles</h1>
+                            <p>We had such a great time in LA!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/picture/bannerPictureOne16to4_Black50%25.jpg" alt="Chicago">
+                        <div class="carousel-caption">
+                            <h1>Los Angeles</h1>
+                            <p>We had such a great time in LA!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/picture/bannerPictureOne16to4_Blue50%25.jpg" alt="New York">
+                        <div class="carousel-caption">
+                            <h1>Los Angeles</h1>
+                            <p>We had such a great time in LA!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#slides" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#slides" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>   
+            <!-- SLIDESHOW STOPS HERE!!! --> 
+            <div class="container">
+                <div class="headerLine">
+                    <h2>Kort om oss</h2>
+                </div>
+                <p class="about">Infotech AS ble etablert i 1993. Vår hovedvirksomhet er konsulenttjenester, rådgivning og utvikling av skreddersydde IT-løsninger. Vi har lang erfaring og er en samarbeidspartner som løser de fleste utfordringer</p>
+                <div class="headerLine">
+                    <h2>Produkter og tenester</h2>
+                </div>
+                <div class="row rowProdMainPage">
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="col-sm-12 prodMainPage">
+                            <img class="productImgMainPage" src="image/graphics/PCMR%20VINYL%20MAYBE.png">
+                            <h3>HEADER</h3>
+                            <p class="productPMainPage">here comes some text</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6 ">
+                        <div class="col-sm-12 prodMainPage">
+                            <img class="productImgMainPage" src="image/graphics/PCMR%20VINYL%20MAYBE.png">
+                            <h3>HEADER</h3>
+                            <p class="productPMainPage">here comes some text</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6 ">
+                        <div class="col-sm-12 prodMainPage">
+                            <img class="productImgMainPage" src="image/graphics/PCMR%20VINYL%20MAYBE.png">
+                            <h3>HEADER</h3>
+                            <p class="productPMainPage">here comes some text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="headerLine">
+                    <h2>Kort om oss</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-sm-6" style="position: relative; float: right">
+                        <h3>Column 1</h3>
+                        <p>Lorem ipsum dolor..</p>
+                        <p>Ut enisefefmds ad..</p>
+                    </div>
+                    <div class="col-xl-4 col-sm-6" style="position: relative; float: left;">
+                        <h3>Column 2</h3>
+                        <p>Lorem ipsum dolor..</p>
+                        <p>Ut enim ad..</p>
+                    </div>    
+                    <div class="col-xl-4 col-sm-6" style="position: relative; float: right;">
+                        <h3>Column 3</h3> 
+                        <p>Lorem ipsum dolor..</p>
+                        <p>Ut enim ad..</p>
+                    </div>
+                </div>
             </div>
-            <nav>
-              <div class="nav-mobile">
-                <a id="nav-toggle" href="#!"><span></span></a>
-              </div>
-              <ul class="nav-list" >
-                <li>
-                  <a href="#.html">Home</a>
-                </li>
-                <li>
-                  <a href="#.html">Routes/tours</a>
-                    </li>
-                <li>
-                  <a href=#.html>About us</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </section>
-         <!-- SLIDESHOW STARTS HERE!! -->
-                 <div id="demo" class="carousel slide" data-ride="carousel">
+            <div class="whiteSpace" style="height: 300px;"></div>
+            <script>
+                          (function($) {
+                      $(function() {
+                        $('nav ul li > a:not(:only-child)').click(function(e) {
+                          $(this).siblings('.nav-dropdown').toggle();
+                          $('.nav-dropdown').not($(this).siblings()).hide();
+                          e.stopPropagation();
+                        });
+                        $('html').click(function() {
+                          $('.nav-dropdown').hide();
+                        });
+                      });
+                      document.querySelector('#nav-toggle').addEventListener('click', function() {
+                        this.classList.toggle('active');
+                      });
+                      $('#nav-toggle').click(function() {
+                        $('nav ul').toggle();
+                      });
+                          })(jQuery); </script>
+                          <script>
+                    //From this point and below is the automatic image slider
+                    function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
 
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="image/picture/bannerPictureOne16to4_Black25%25.jpg" alt="Los Angeles">
-  <div class="carousel-caption">
-    <h3>Los Angeles</h3>
-    <p>We had such a great time in LA!</p>
-  </div>
-    </div>
-    <div class="carousel-item">
-      <img src="image/picture/bannerPictureOne16to4_Black50%25.jpg" alt="Chicago">
-  <div class="carousel-caption">
-    <h3>Los Angeles</h3>
-    <p>We had such a great time in LA!</p>
-  </div>
-    </div>
-    <div class="carousel-item">
-      <img src="image/picture/bannerPictureOne16to4_Blue50%25.jpg" alt="New York">
-  <div class="carousel-caption">
-    <h3>Los Angeles</h3>
-    <p>We had such a great time in LA!</p>
-  </div>
-    </div>
-  </div>
-  
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>   
-<!-- SLIDESHOW STOPS HERE!!! --> 
-<div class="container" style="top:90px; position: relative;">
-  <div class="row">
-    <div class="col-xl-4 col-sm-6">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor..</p>
-      <p>Ut enisefefmds ad..</p>
-    </div>
-    <div class="col-xl-4 col-sm-6">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor..</p>
-      <p>Ut enim ad..</p>
-    </div>    
-    <div class="col-xl-4 col-sm-6">
-      <h3>Column 3</h3> 
-      <p>Lorem ipsum dolor..</p>
-      <p>Ut enim ad..</p>
-    </div>
-  </div>
-</div>
-        
-              <script>
-              (function($) {
-          $(function() {
-            $('nav ul li > a:not(:only-child)').click(function(e) {
-              $(this).siblings('.nav-dropdown').toggle();
-              $('.nav-dropdown').not($(this).siblings()).hide();
-              e.stopPropagation();
-            });
-            $('html').click(function() {
-              $('.nav-dropdown').hide();
-            });
-          });
-          document.querySelector('#nav-toggle').addEventListener('click', function() {
-            this.classList.toggle('active');
-          });
-          $('#nav-toggle').click(function() {
-            $('nav ul').toggle();
-          });
-              })(jQuery); </script>
-              <script>
-        //From this point and below is the automatic image slider
-        function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+            var slideIndex = 0;
+            showSlides();
 
-var slideIndex = 0;
-showSlides();
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                   slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 10000); // Change image every 2 seconds
+            }
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 10000); // Change image every 2 seconds
-}
-                  
-                  
-      </script>
+
+
+
+            </script>
         </body>
-    </html>
+</html>

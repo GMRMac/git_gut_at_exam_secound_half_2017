@@ -1,9 +1,127 @@
-*{
-    margin: 0;
-    border: 0;
-    padding: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+  html {
+  box-sizing: border-box;
+}
+body{
+    font-family: Century gothic;
 }
 
+.col-xl-4{
+    padding: 5px;
+}
+
+.row{
+    margin: 0;
+}
+
+.productImgMainPage{
+    width: 100%;
+}
+
+.container{
+    position: relative;
+    top:20px;
+}
+
+p.about{
+    margin: 20px 0px 60px 40px;
+    color:#000000;
+    width: 800px;
+    font-size: 18px;
+}
+
+p.productPMainPage{
+    margin: 10px;
+    color:#000000;
+}
+
+h1{
+    font-size: 40px;
+}
+h2{
+    position: relative;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 6px;
+}
+h3{
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #2276B2;
+    display: block;
+    padding: 5px;
+    color:#FFFFFF;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.iconTop{
+    position: relative;
+    top:10px;
+    left:-5px;
+}
+
+.liIconTop{
+    float:right;
+    position: relative;
+    top: -45px;
+}
+.liIconBottom{
+    position: relative;
+    top: 45px;
+    font-weight: bold;
+    font-size: 20px;
+}
   /* Make the image fully responsive */
   .carousel-inner img {
       width: 100%;
@@ -16,7 +134,7 @@ text-center{
     background-color: #FFF;
 }
 .navigation {
-  height: 90    px;
+  height: 90px;
   background: #FFFFFF;
   z-index: 1;
   position: fixed;
@@ -26,7 +144,8 @@ margin: 0;
 
 .brand {
   position: relative;
-  padding-left: 20px;
+  padding-left: 40px;
+    padding-top: 5px;
   float: left;
   text-transform: uppercase;
   font-size: 1.4em;
@@ -59,7 +178,7 @@ nav ul li a,
 nav ul li a:visited {
   display: block;
   padding: 0 20px;
-  line-height: 70px;
+  line-height: 45px;
   background: #ffffff;
   color: #2276B2;
   text-decoration: none;
@@ -114,7 +233,30 @@ nav ul li ul li a {
     padding: 0;
 }
 
-@media only screen and (max-width: 801px) {
+
+.whiteSpace{ 
+    height: 90px;
+}
+
+.headerLine {
+  max-width: 66%;
+  height: 48px;
+  color:#FFFFFF;
+  background: #2276B2;
+  -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 0% 100%);
+}
+
+.prodMainPage{
+    border: solid 0.125px #C7C7C7;
+    padding: 0;
+}
+
+.rowProdMainPage{
+    margin: 20px 0 40px 0;
+}
+
+@media only screen and (max-width: 769px) {
   .nav-mobile {
     display: block;
   }
@@ -150,55 +292,7 @@ nav ul li ul li a {
     height: 30px;
 }
     
-    .banner{
-        width:200% !important;
-        overflow: hidden;
-    }
     
-    
-    .feedImg img{
-        width: 90% !important;
-        margin: 50px 5% 0px 5%;
-}
-    
-    .brand{
-        font-size: 0.7em;
-    }
-    
-    .Window{
-        width: 90%;
-        margin: 5px 5%
-    }
-    
-    .tabell{
-        left:0;
-    }
-    
-    .feedImg h2, .feedImg p{
-        width: 70%;
-    }
-    
-    .fifty{
-    width: 70%;
-}
-    .rightFooter{
-        float: left;
-    }
-    
-    .rightFooter{
-        margin-left: 12.5%;
-    }
-    
-    .ccontainerFooter{
-        height: 750px;
-    }
-    
-    .banner h1{
-    font-size: 3em;
-    width: 100%;
-    color: #262626;
-    margin: 0;
-    }
     ul li a{
         font-size: 0.5em;
     }
@@ -208,27 +302,41 @@ nav ul li ul li a {
     font-size: 0.5em;
     }
     
+    .navigation{
+        height: 70px;
+    }
+
+.liIconTop{
+    float:none;
+    position: relative;
+    top:0;
+}
+.liIconBottom{
+    position: relative;
+    top: 0;
+}
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 769px) {
   .nav-list {
     display: block !important;
   }
  
-}#nav-toggle {
+}
+#nav-toggle {
   position: absolute;
-  left: 18px;
-  top: 22px;
+  left: 0px;
+  top: 20px;
   cursor: pointer;
-  padding: 10px 35px 16px 0px;
+  padding: 20px 35px 26px 0px;
 }
 #nav-toggle span,
 #nav-toggle span:before,
 #nav-toggle span:after {
   cursor: pointer;
   border-radius: 1px;
-  height: 5px;
-  width: 35px;
+  height: 9px;
+  width: 50px;
   background: #2276B2;
   position: absolute;
   display: block;
@@ -236,10 +344,10 @@ nav ul li ul li a {
   transition: all 300ms ease-in-out;
 }
 #nav-toggle span:before {
-  top: -10px;
+  top: -15px;
 }
 #nav-toggle span:after {
-  bottom: -10px;
+  bottom: -15px;
 }
 #nav-toggle.active span {
   background-color: transparent;
