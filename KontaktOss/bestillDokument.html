@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+    <html lang="no">
+        <head>
+            <title>Hjem</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../style/stylesheet.css"/>
+            <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">  
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        </head>
+        <body>
+            <section class="navigation">
+                <div class="nav-container">
+                    <div class="brand">     
+                        <a href="../index.html"><img src="../image/graphics/MainLogov2.svg" height="70" style="position:relative; left:-20px;" alt="Infotech logo"></a>
+                    </div>
+                    <nav>
+                        <div class="nav-mobile">
+                            <a id="nav-toggle" href="#!"><span></span></a>
+                        </div>
+                        <ul class="nav-list" >
+                            <li>
+                                <a href="../index.html"class="liIconBottom">Hjem</a>
+                            </li>
+                            <li>
+                                <a href="../Produkter/index.html" class="liIconBottom">Produkter og tenester</a>
+                            </li>
+                            <li>
+                                <a href="../KontaktOss/index.html"class="liIconBottom">kontakt oss</a>
+                            </li>
+                        </ul>
+                        <ul class="nav-list" >
+                            <li class="liIconTop">
+                                <a href="../FAQ/index.html"><img src="../image/graphics/questionmarkIcon.svg" height="30" class="iconTop">Spørsmål?</a>
+                            </li>
+                            <li class="liIconTop">
+                                <a href="#.html"><img src="../image/graphics/loginnIcon.svg" height="30" class="iconTop">Logg inn</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <div class="sub-menu">
+                <ul>
+                    <li><a href="index.html">Kontakt oss</a></li>
+                    <li><a href="referansar.html">Referansar</a></li>
+                    <li><a href="bestillDokument.html">Bestill dokumenter</a></li>
+                </ul> 
+            </div>   
+            <div class="whiteSpace"></div>
+            <div id="map"></div>
+            <div class="container">
+                <h2 class="h2KontaktOss">Kontakt oss</h2>
+                <div style="height: 800px;">
+                    <div class="col-xl-6 right">
+                        <h3 class="kontaktOssInformasjonH3">Kontaktinformasjon</h3>
+                        <p class="kontaktOssInformasjonP">Infotech</p>
+                        <p class="kontaktOssInformasjonP">Kanalveien 105 A</p>
+                        <p class="kontaktOssInformasjonP">5608 Bergen</p>
+                        <p class="kontaktOssInformasjonP">Tlf: 55 27 00 30</p>
+                        <p class="kontaktOssInformasjonP">Post: post@infotech.no</p><br>
+                        <p class="kontaktOssInformasjonP">Ved [ein eller annan type spørsmål], spør Ola Nordmann, ola@nordmann.no</p>
+                    </div>
+                    <div class="col-xl-6 left">
+                        <h3 class="kontaktOssInformasjonH3">Fyll ut skjema</h3>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="name">Namn*</label>
+                                <input type="text" id="name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="corpName">Firmanamn</label>
+                                <input type="text" id="cropName" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefonnr*</label>
+                                <input type="number" min="10000000" max="99999999" id="cropName" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="eMail">Email*</label>
+                                <input type="email" id="eMail" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Din beskjed*:</label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                            <p class="radio">Henvendelsen gjelder:</p>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio">Byggekortleser</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio">ITBASE</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio">Annet</label>
+                            </div>
+                        </form>
+                        <p class="radio">* = må svares på</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="portraitContainer">
+                <h2 class="h2KontaktOss">Medarbeidere</h2>
+                <div class="portrait">
+                    <div class="left">
+                        <div id="cf">
+                            <img class="bottom medabeidarImg" src="../image/picture/gaben.jpg" />
+                            <img class="top medabeidarImg" src="../image/picture/gaben_black.jpg" />
+                        </div>
+                    </div>
+                    <div style="width: 66%;" class="right ">
+                        <h3 class="h3Portrait textLeft">Gabe Newell</h3>
+                        <p class="pPortrait textLeft">123456789</p>
+                        <p class="pPortrait textLeft">example@mail.com</p>
+                        <p class="pPortrait textLeft">Frontend developer</p>
+                        <p class="pPortrait textLeft">Musikk, gaming, turgåing</p>
+                    </div>
+                    </div>
+                   <div class="portrait">
+                    <div class="right">
+                        <div id="cf">
+                            <img class="bottom medabeidarImg" src="../image/picture/gaben.jpg" />
+                            <img class="top medabeidarImg" src="../image/picture/gaben_black.jpg" />
+                        </div>
+                    </div>
+                    <div style="width: 66%;" class="left">
+                        <h3 class="h3Portrait textRight">Gabe Newell</h3>
+                        <p class="pPortrait textRight">123456789</p>
+                        <p class="pPortrait textRight">example@mail.com</p>
+                        <p class="pPortrait textRight">Frontend developer</p>
+                        <p class="pPortrait textRight">Musikk, gaming, turgåing</p>
+                    </div>
+                </div>
+                   <div class="portrait">
+                    <div class="left">
+                        <div id="cf">
+                            <img class="bottom medabeidarImg" src="../image/picture/gaben.jpg" />
+                            <img class="top medabeidarImg" src="../image/picture/gaben_black.jpg" />
+                        </div>
+                    </div>
+                    <div style="width: 66%;" class="right ">
+                        <h3 class="h3Portrait textLeft">Gabe Newell</h3>
+                        <p class="pPortrait textLeft">123456789</p>
+                        <p class="pPortrait textLeft">example@mail.com</p>
+                        <p class="pPortrait textLeft">Frontend developer</p>
+                        <p class="pPortrait textLeft">Musikk, gaming, turgåing</p>
+                    </div>
+                    </div>
+                   <div class="portrait">
+                    <div class="right">
+                        <div id="cf">
+                            <img class="bottom medabeidarImg" src="../image/picture/gaben.jpg" />
+                            <img class="top medabeidarImg" src="../image/picture/gaben_black.jpg" />
+                        </div>
+                    </div>
+                    <div style="width: 66%;" class="left">
+                        <h3 class="h3Portrait textRight">Gabe Newell</h3>
+                        <p class="pPortrait textRight">123456789</p>
+                        <p class="pPortrait textRight">example@mail.com</p>
+                        <p class="pPortrait textRight">Frontend developer</p>
+                        <p class="pPortrait textRight">Musikk, gaming, turgåing</p>
+                    </div>
+                </div>
+            </div>          
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+              <!--        
+            <div class="container">
+                       <div class="col-md-4">
+                            <div id="cf">
+                                <img class="bottom medabeidarImg" src="../image/picture/gaben.jpg" />
+                                <img class="top medabeidarImg" src="../image/picture/gaben_black.jpg" />
+                            </div>
+                        </div>
+                        <div id="col-md-8">
+                                <h3 class="aboutTeamH3">Gabe Newell</h3>
+                                <p class="aboutTeamP ">123456789</p>
+                                <p class="aboutTeamP ">example@mail.com</p>
+                                <p class="aboutTeamP ">Frontend developer</p>
+                                <p class="aboutTeamP ">Musikk, gaming, turgåing</p>
+                            
+                        </div>
+                    
+                       <div class="col-md-4 ">
+                            <div id="cf">
+                                <img class="bottom medabeidarImg" src="../image/picture/gaben.jpg" />
+                                <img class="top medabeidarImg" src="../image/picture/gaben_black.jpg" />
+                            </div>
+                        </div>
+                        
+                        <div id="col-md-8 ">
+                                <h3 class="aboutTeamH3">Gabe Newell</h3>
+                                <p class="aboutTeamP ">123456789</p>
+                                <p class="aboutTeamP ">example@mail.com</p>
+                                <p class="aboutTeamP ">Frontend developer</p>
+                                <p class="aboutTeamP ">Musikk, gaming, turgåing</p>
+                            
+                        </div>
+                    </div> -->
+            <footer>
+                <div class="container">
+                    <img class="footerImg" src="../image/graphics/MainLogoHorizontalv2Black.svg">
+                    <hr>
+                    <div class="row">
+                        <div class="col-xl-4 col-sm-6">
+                            <!-- <ul class="footerUl">
+                                <li class="liFooter"><h4>Kontaktinformasjon</h4></li>
+                                <li class="liFooter">Infotech AS</li>
+                                <li class="liFooter">Analveien 105 A</li>
+                                <li class="liFooter">5608 Bergen</li>
+                                <li class="liFooter">Tlf: 55 27 00 30</li>
+                                <li class="liFooter">E-post: <a class="footerA" href="#">post@infotech.no</a></li>
+                            </ul>
+                            <ul class="footerUl">
+                                <li class="liFooter"><h4>Brukerstøtte</h4></li>
+                                <li class="liFooter"><a class="footerA" href="#">Fjernstyring programmer</a></li>
+                                <li class="liFooter"><a class="footerA" href="#">Ofte stilte spørsmål</a></li>
+                                <li class="liFooter"><a class="footerA" href="#">Kontakt oss</a></li>
+                                <li class="liFooter"><a class="footerA" href="#">Kontakt ein medarbeidar</a></li>
+                                <li class="liFooter"><a class="footerA" href="#">Trykk her for kontaktskjema</a></li>
+                            </ul>
+                            <ul class="footerUl">
+                                <li class="liFooter"><h4>Meny</h4></li>
+                                <li class="liFooter"><a class="footerA" href="#">Hjem</a></li>
+                                <li class="liFooter"><a class="footerA" href="#">Produkter og tenester</a></li>
+                                <li class="liFooter"><a class="footerA" href="#">Kontakt oss</a></li>
+                            </ul> -->
+
+                            <h4>Kontaktinformasjon</h4>
+                            <p class="footerP">Infotech AS</p>
+                            <p class="footerP">Analveien 105 A</p>
+                            <p class="footerP">5608 Bergen</p>
+                            <p class="footerP">Tlf: 55 27 00 30</p>
+                            <p class="footerP">E-post: <a class="footerA" href="#">post@infotech.no</a></p>
+                        </div>
+                        <div class="col-xl-4 col-sm-6">
+                            <h4>Brukerstøtte</h4>
+                            <p class="footerP"><a class="footerA" href="#">Fjernstyring programmer</a></p>
+                            <p class="footerP"><a class="footerA" href="#">Ofte stilte spørsmål</a></p>
+                            <p class="footerP"><a class="footerA" href="#">Kontakt oss</a></p>
+                            <p class="footerP"><a class="footerA" href="#">Kontakt ein medarbeidar</a></p>
+                            <p class="footerP"><a class="footerA" href="#">Trykk her for kontaktskjema</a></p>
+                        </div>
+                        <div class="col-xl-4 col-sm-6">
+                            <h4>Meny</h4>
+                            <p class="footerP"><a class="footerA" href="#">Hjem</a></p>
+                            <p class="footerP"><a class="footerA" href="#">Produkter og tenester</a></p>
+                            <p class="footerP"><a class="footerA" href="#">Kontakt oss</a></p>
+<p class="footerP"><a class="footerA" href="#">Mobil app</a></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- <div class="whiteSpace" style="height: 300px;"></div> -->
+            <script>
+                          (function($) {
+                      $(function() {
+                        $('nav ul li > a:not(:only-child)').click(function(e) {
+                          $(this).siblings('.nav-dropdown').toggle();
+                          $('.nav-dropdown').not($(this).siblings()).hide();
+                          e.stopPropagation();
+                        });
+                        $('html').click(function() {
+                          $('.nav-dropdown').hide();
+                        });
+                      });
+                      document.querySelector('#nav-toggle').addEventListener('click', function() {
+                        this.classList.toggle('active');
+                      });
+                      $('#nav-toggle').click(function() {
+                        $('nav ul').toggle();
+                      });
+                          })(jQuery); 
+            </script>
+            <script>
+      function initMap() {
+        var myLatLng = {lat: 60.36, lng: 5.34379};
+        // Styles a map in night mode.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 16,
+          styles: [
+            {elementType: 'geometry', stylers: [{color: '#262626'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#a1a1a1'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+        });
+          var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+        });
+      }
+      
+            </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBguwRta9oJ6jw3-n--f0QZW1tCkijKkX8&callback=initMap"
+    async defer></script>
+        </body>
+</html>
