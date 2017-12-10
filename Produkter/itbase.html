@@ -11,12 +11,21 @@
             <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">  
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110902792-1"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-110902792-1');
+            </script>
         </head>
         <body>
             <section class="navigation">
                 <div class="nav-container">
                     <div class="brand">     
-                        <a href="../index.html"><img src="../image/graphics/MainLogov2.svg" height="70" style="position:relative; left:-20px;" alt="Infotech logo"></a>
+                        <a href="../index.html"><img src="../image/graphics/MainLogov2.svg" class="brandLogo" alt="Infotech logo"></a>
                     </div>
                     <nav>
                         <div class="nav-mobile">
@@ -27,7 +36,7 @@
                                 <a href="../index.html"class="liIconBottom">Hjem</a>
                             </li>
                             <li>
-                                <a href="../Produkter/index.html" class="liIconBottom">Produkter og tenester</a>
+                                <a href="../Produkter/index.html" class="liIconBottom avtiveMenu">Produkter og tenester</a>
                             </li>
                             <li>
                                 <a href="../KontaktOss/index.html"class="liIconBottom">Kontakt oss</a>
@@ -35,15 +44,22 @@
                         </ul>
                         <ul class="nav-list">
                             <li class="liIconTop">
-                                <a href="../FAQ/index.html"><img src="../image/graphics/questionmarkIcon.svg" height="30" class="iconTop">Spørsmål?</a>
+                                <a href="../FAQ/index.html">Spørsmål?</a>
                             </li>
                             <li class="liIconTop">
-                                <a href="#.html"><img src="../image/graphics/loginnIcon.svg" height="30" class="iconTop">Logg inn</a>
+                                <a href="#.html">Logg inn</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </section>
+            <div class="sub-menu">
+                <ul>
+                    <li><a href="kortleser.html">Byggekortlesar</a></li>
+                    <li><a href="itbase.html" class="activeSubMenu">ITBase</a></li>
+                    <li><a href="konsulenttenester.html">Konsulenttenester</a></li>
+                </ul> 
+            </div>
             <div class="whiteSpace"></div>
             <!-- SLIDESHOW STARTS HERE!! -->
             <div id="slides" class="carousel slide" data-ride="carousel">
@@ -87,39 +103,146 @@
             </div>   
             <!-- SLIDESHOW STOPS HERE!!! --> 
             <div class="container">
-                <h2 class="productPageH2">Produktliste</h2>
-                <div class="col-sm-12 productPageDiv">
-                    <div class="row">
-                        <div class="col-md-2 ">
-                            <img src="../image/logo_finished/bergen_kommune_GUL.png" style="width: 100%;">
-                        </div>
-                        <div class="col-md-10 ">
-                            <h3 style="text-align: left; margin: 0; padding: 0;"><a href="#!" style="display: block;">ITBase</a></h3>
-                            <p>And some more test</p>
-                        </div>
-                    </div>
+                <h2>ITBASE prosjektweb</h2>
+                <p class="productPageUndertitle">Med vårt webhotell ITBASE Prosjektweb samler du alle dokumentene tilknyttet et byggeprosjekt på internett. <br><br>
+                Systemet inneholder en rekke nyttige funksjoner som opplasting av tegninger, revisjonshåndtering, tilgangskontroll og e-post-rapporter.</p>
+                <h3 class="productPageH3">Kostnadskutt - Spar tid og kopieringskostnader</h3>
+                <p class="productPageP">Systemet er webbasert. Alle dokumenter, tegninger og tilbudsdokumenter er tilgjenglige på webhotellet. Nye tegninger og revisjoner kan skrives ut on-site. Besparelsene på kopiering, distribusjon og tidsbruk er store. </p>
+                <h3 class="productPageH3">Kutt kopieringskostnader:</h3>
+                <p class="productPageP">1) Gi anbydere tilgang til anbudstegninger direkte på webhotellet. <br>
+                2) Bruk plotter på byggeplassen.<br>
+                <h3 class="productPageH3">Brukervennlig - Alle kan delta!</h3>
+                <p class="productPageP">
+                Suksessen til ITBASE Prosjektweb skyldes fornøyde kunder. Tilbakemeldingene er at systemet er enkelt å bruke; uavhengig av IT-erfaring. Vi har derfor utviklet et program med alle de nødvendige funksjonene. Systemet er bygget opp etter kjent mappestruktur. En bruker som klarer å navigere i f.eks. Windows lærer seg lett ITBASE Prosjektweb.</p>
+                <h3 class="productPageH3">Noen nyttige funksjoner</h3>
+                <p class="productPageInniButtonP">  Automatisk revisjonshåndtering slik at du alltid kan gå tilbake og se på eldre versjoner av en tegning </p>
+                <p class="productPageInniButtonP">Enkel håndtering av tilgangskontroll slik at du alltid vet hvem som kan lese og legge til filer </p>
+                <p class="productPageInniButtonP">Forhåndsvisning av PDF som miniatyrbilder så det blir lettere å finne riktig fil </p>
+                <p class="productPageInniButtonP">E-post-rapport med oversikt over revisjoner </p>
+                <p class="productPageInniButtonP">Spesielt tilpasset visning for mobil og nettbrett. <br>
+                Trykk på "Flere egenskaper" for alle funksjoner og tillegsmoduler</p>
+                <button type="button" class="productPageShowMoreButton" data-toggle="collapse" data-target="#properties">Flere egenskaper</button>
+                <div id="properties" class="collapse">
+                    <table class="productPageTable">
+                        <tr>
+                            <td class="productPageTdLeft">Inneholder:</td>
+                            <td class="productPageTdRight">Grunnpakken</td>
+                            <td class="productPageTdRight" >Pro</td>
+                        </tr>
+                        <tr>
+                            <td class="productPageTdLeft">Prosjektweb</td>
+                            <td class="productPageTdRight">1</td>
+                            <td class="productPageTdRight">[antall]</td>
+                        </tr>
+                        <tr>
+                            <td class="productPageTdLeft">Oppsett av prosjektmal</td>
+                            <td class="productPageTdRight">&#x2714;</td>
+                            <td class="productPageTdRight">&#x2714;</td>
+                        </tr>
+                        <tr>
+                            <td class="productPageTdLeft">Antall brukere</td>
+                            <td class="productPageTdRight">Ubegrenset</td>
+                            <td class="productPageTdRight">Ubegrenset</td>
+                        </tr>
+                        <tr>
+                            <td class="productPageTdLeft">Etablering</td>
+                            <td class="productPageTdRight">&#x2714;</td>
+                            <td class="productPageTdRight">&#x2714;</td>
+                        </tr>
+                        <tr>
+                            <td class="productPageTdLeft">Serverplass</td>
+                            <td class="productPageTdRight">Ubegrenset</td>
+                            <td class="productPageTdRight">Ubegrenset</td>
+                        </tr>
+                        <tr>
+                            <td class="productPageTdLeft">Daglig backup</td>
+                            <td class="productPageTdRight">&#x2714;</td>
+                            <td class="productPageTdRight">&#x2714;</td>
+                        </tr>
+                        <tr>
+                            <td class="productPageTdLeft">Brukerdokumentasjon</td>
+                            <td class="productPageTdRight">&#x2714;</td>
+                            <td class="productPageTdRight">&#x2714;</td>
+                        </tr>
+                        <tr>
+                            <td class="productPageTdLeft">Fri support</td>
+                            <td class="productPageTdRight">&#x2714;</td>
+                            <td class="productPageTdRight">&#x2714;</td>
+                        </tr>
+                        <tr>
+                            <td class="productPageTdLeft">Opplæringskurs</td>
+                            <td class="productPageTdRight">&#x2714;</td>
+                            <td class="productPageTdRight">&#x2714;</td>
+                        </tr>
+                    </table>
+                    <h3 style="margin-top: 40px; ">Tilleggsmoduler</h3>
+                    <p class="productPageUndertitle">Infotech AS har utviklet flere nyttige tilleggsmoduler som utvider funksjonaliteten til ITBASE:</p>
+                    <h3>Notis-system</h3>
+                    <p class="productPageP">Med notis-systemet kan du lage nyhetssider hvor du kan legge ut nyheter og nyttig informasjon. Du kan styre tilgangen til nyhetssidene på samme måte som mapper i ITBASE slik at de kan være synlig for alle uten innlogging, eller bare for bestemte brukergrupper som er logget inn i ITBASE.</p>
+                    <h3>ToDo-system</h3>
+                    <p class="productPageP">Men ITBASE ToDo kan du lage arbeidsoppgaver som blir tilknyttet brukere i ITBASE, og brukerne kan legge inn informasjon om hva som blir gjort. Systemet gir brukere en god oversikt over arbeidsoppgaver, og administrator kan følge med i arbeidet og holde oversikt. Systemet gir også en logg over oppgaver som er utført.</p>
+                    <h3>Endringsvarsel/ordre</h3>
+                    <p class="productPageP">Med tilleggsmodulen for endringsvarsler og ordrer kan du holde full oversikt over alle endringsjobber i systemet. Du får full kontroll over kostnader ved endringene samt historikk over all kommunikasjon. Modulen er utviklet i samarbeid med Helse Bergen DTD Prosjektkontoret.</p>
+                    <p class="productPageP">Ta kontakt med Infotech AS dersom du ønsker å prøve en eller flere av disse modulene.</p>
                 </div>
-                <div class="col-sm-12 productPageDiv productPageDivBorderTop">
-                    <div class="row">
-                        <div class="col-md-2 ">
-                            <img src="../image/logo_finished/bergen_kommune_GUL.png" style="width: 100%;">
-                        </div>
-                        <div class="col-md-10 ">
-                            <h3 style="text-align: left; margin: 0; padding: 0;">ITBase tillegspakker</h3>
-                            <p>And some more test</p>
-                        </div>
-                    </div>
+                <h3 class="productPageH3">Priser</h3>
+                <table class="productPageTable">
+                    <tr style="color:#ffffff;">
+                        <td class="productPageTdLeft">Prosjektverdi:</td>
+                        <td class="productPageTdRight">Pris</td>
+                    </tr>
+                    <tr style="color:#ffffff;">
+                        <td class="productPageTdLeft">0-100 mill.</td>
+                        <td class="productPageTdRight">1900 kr/mnd ekskl.mva.</td>
+                    </tr>
+                    <tr style="color:#ffffff">
+                        <td class="productPageTdLeft">100-250 mill.</td>
+                        <td class="productPageTdRight">2400 kr/mnd ekskl.mva.</td>
+                    </tr>
+                    <tr style="color:#ffffff">
+                        <td class="productPageTdLeft">250-500 mill.</td>
+                        <td class="productPageTdRight">2900 kr/mnd ekskl.mva.</td>
+                    </tr>
+                </table>
+                <ul class="productPageUl">
+                    <li>Ta kontakt for pris ved større prosjekter.</li>
+                    <li>Support gjelder alle brukere/firma som deltar i prosjektet.</li>
+                    <li>Vi gir gode rabatter ved bruk til flere prosjekter. Vi tilbyr også en fast pris for bruk til ubegrenset antall prosjekter.</li>
+                </ul>
+                
+                <p class="productPageP">Vurder ditt behov og ta kontakt med Infotech AS for et tilbud. Til større bedrifter kan vi tilby uforpliktende prøvetid og et godt tilbud for bruk til ubegrenset antall prosjekter. Vi yter best mulig service og står til din disposisjon dersom du lurer på noe.</p>
+
+                <h2>Spørsmål og svar</h2>
+                <div class="FAQProductPage">
+                    <h3 class="FAQh3">1. Hva er ITBASE?</h3>
+                    <p class="FAQp">ITBASE er et webhotell for byggeprosjekter – en portal på nettet der alle dokumenter og tegninger tilknyttet et byggeprosjekt deles mellom alle som deltar i prosjektet.</p>
                 </div>
-                <div class="col-sm-12 productPageDiv productPageDivBorderTop">
-                    <div class="row">
-                        <div class="col-md-2 ">
-                            <img src="../image/logo_finished/bergen_kommune_GUL.png" style="width: 100%;">
-                        </div>
-                        <div class="col-md-10 ">
-                            <h3 style="text-align: left; margin: 0; padding: 0;">Kortleser</h3>
-                            <p>And some more test</p>
-                        </div>
-                    </div>
+                <div class="FAQProductPage">
+                    <h3 class="FAQh3">2. Hvorfor er det lønnsomt å bruke et webhotell<span class="spanSpace"></span>/prosjektweb?</h3>
+                    <ul>
+                        <li>Slipper kostnadene med å administrere et tegnings- og dokumentarkiv.</li>
+                        <li>Unngår feil som skyldes bruk av gamle tegninger: Siste versjon er alltid tilgjengelig på webhotellet.</li>
+                        <li>Dramatisk reduksjon av utskriftskostnader siden en stor del av tegningene kan skrives ut på byggeplass ved behov.</li>
+                        <li>Eliminerer utskrift av tegninger i forbindelse med anbud: Tegningene kan lastes ned fra webhotell.</li>
+                        <li>Sparer tid: Endringer er tilgjengelig for alle aktører umiddelbart.</li>
+                        <li>For et byggeprosjekt på 50 millioner kr som varer 1 år kan besparelsene være på flere hundre tusen kroner. Jo større prosjekt, jo større besparelser.</li>
+                    </ul>
+                </div>
+
+                <div class="FAQProductPage">
+                    <h3 class="FAQh3">3. Hvorfor er ITBASE bedre enn andre webhotell? </h3>
+                    <p class="FAQp">Byggekortadministrator kan selv velge innstillingene av arbeidstimer fra passeringsdataene. Avrunding av tiden registrert inn/ut kan registreres mot:</p>
+                    <ul>
+                        <li>ITBASE er enkelt å bruke, og du trenger ingen forkunnskaper.</li>
+                        <li>Alle kundene er fornøyde. De som har brukt andre systemer foretrekker ITBASE.</li>
+                        <li>ITBASE er skreddersydd for byggeprosjekter og har ingen overflødige funksjoner.</li>
+                        <li>Man trenger ikke lære seg nye måter å tenke på. Alle som har brukt en datamaskin før klarer å bruke ITBASE uten opplæring.</li>
+                        <li>Det er svært enkelt å administrere tilgangskontroll, også på tvers av prosjekter.</li>
+                        <li>ITBASE er under kontinuerlig utvikling og blir stadig bedre. For tiden er det fokus på nettbrett og mobile enheter.</li>
+                        <li>Nyttige tilleggsmoduler kan tas i bruk uten ekstra kostnader. </li>
+                        <li>Kostnadene er forutsigbare, samme pris pr måned gjennom hele prosjektperioden – uavhengig av antall brukere og datamengde.g</li>
+                        <li>Totalprisen blir nesten alltid lavere.</li>
+                    </ul>
                 </div>
             </div>
             <footer>
@@ -134,7 +257,7 @@
                                 <li class="liFooter">Analveien 105 A</li>
                                 <li class="liFooter">5608 Bergen</li>
                                 <li class="liFooter">Tlf: 55 27 00 30</li>
-                                <li class="liFooter">E-post: <a class="footerA" href="#">post@infotech.no</a></li>
+                                <li class="liFooter">E-post: <a class="footerA" href="mailto:post@infotech.no?Subject=Questiion%20to%20Infotech" target="_top">post@infotech.no</a></li>
                             </ul>
                             <ul class="footerUl">
                                 <li class="liFooter"><h4>Brukerstøtte</h4></li>
@@ -156,22 +279,21 @@
                             <p class="footerP">Analveien 105 A</p>
                             <p class="footerP">5608 Bergen</p>
                             <p class="footerP">Tlf: 55 27 00 30</p>
-                            <p class="footerP">E-post: <a class="footerA" href="#">post@infotech.no</a></p>
+                            <p class="footerP">E-post: <a class="footerA" href="mailto:post@infotech.no?Subject=Questiion%20to%20Infotech" target="_top">post@infotech.no</a></p>
                         </div>
                         <div class="col-xl-4 col-sm-6">
                             <h4>Brukerstøtte</h4>
-                            <p class="footerP"><a class="footerA" href="#">Fjernstyring programmer</a></p>
-                            <p class="footerP"><a class="footerA" href="#">Ofte stilte spørsmål</a></p>
-                            <p class="footerP"><a class="footerA" href="#">Kontakt oss</a></p>
-                            <p class="footerP"><a class="footerA" href="#">Kontakt ein medarbeidar</a></p>
-                            <p class="footerP"><a class="footerA" href="#">Trykk her for kontaktskjema</a></p>
+                            <p class="footerP"><a class="footerA" href="../Produkter/programmer.html">Fjernstyring programmer</a></p>
+                            <p class="footerP"><a class="footerA" href="../FAQ/index.html">Ofte stilte spørsmå</a></p>
+                            <p class="footerP"><a class="footerA" href="../KontaktOss/index.html">Kontakt oss</a></p>
+                            <p class="footerP"><a class="footerA" href="../KontaktOss/index.html#medarbeidere">Kontakt ein medarbeidar</a></p>
                         </div>
                         <div class="col-xl-4 col-sm-6">
                             <h4>Meny</h4>
-                            <p class="footerP"><a class="footerA" href="#">Hjem</a></p>
-                            <p class="footerP"><a class="footerA" href="#">Produkter og tenester</a></p>
-                            <p class="footerP"><a class="footerA" href="#">Kontakt oss</a></p>
-<p class="footerP"><a class="footerA" href="#">Mobil app</a></p>
+                            <p class="footerP"><a class="footerA" href="../index.html">Hjem</a></p>
+                            <p class="footerP"><a class="footerA" href="../Produkter/index.html">Produkter og tenester</a></p>
+                            <p class="footerP"><a class="footerA" href="../KontaktOss/index.html">Kontakt oss</a></p>
+                            <p class="footerP"><a class="footerA" href="../Produkter/mobil.html">Mobil app</a></p>
                             <p></p>
                             <p></p>
                         </div>

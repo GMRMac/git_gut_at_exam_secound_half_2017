@@ -56,6 +56,7 @@ body{
     line-height: 1.3;
 }
 
+
 .col-sm-12 p{
     color:#FFFFFF;
 }
@@ -87,17 +88,135 @@ footer hr {
     margin-bottom: 20px;
 } 
 
+img.brandLogo{
+    height: 70px;
+    position: relative;
+    left: -20px;
+}
+
+.FAQContainer{
+    overflow: auto;
+}
+
+.FAQProductPage {
+    
+    max-width: 800px;
+    margin: 30px auto 10px auto
+}
+
+.FAQProductPage li {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+/* FAQ */
+.FAQContent{
+    margin: 4.166666666666%;
+    border: 1px solid #E79C10;
+    padding: 30px;
+}
+
+
+.FAQPageButton{    
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E79C10;
+    border: 0;
+    font-size: 20px;
+    padding: 10px 40px;
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+    text-align: center;
+}
+
+.FAQPageButtonA{    
+    color:#262626;
+}
+
+
+.FAQPageButtonA:hover{    
+    color:#262626;
+}
+
+.collapse{
+    transition: 1s;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 3px solid #E79C10;
+    border-bottom: 3px solid #E79C10;
+    padding: 40px 0;
+}
+
+
 .productPageDiv{
     padding: 60px 10px;
 }
 
+.productPageImg{
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+}
+
 .productPageDivBorderTop{
-    
     border-top: 1px solid #696B6A;
 }
 
+
 .productImgMainPage{
     width: 100%;
+}
+
+.mobileToturialH3{
+    margin: 60px 0 20px 0;
+}
+
+.downloadAppDiv{
+    margin: 0 auto;
+    max-width: 800px;
+    overflow: auto;
+}
+
+.downloadApp{
+    width: 33%;
+    float: left;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+.width800{
+    width: 50%;
+    padding: 10px auto 100px auto;
+}
+.productPageUndertitle{
+    color:#FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.infotechLogin{
+    display: block;
+    margin: 0 auto;
+}
+
+p.productPageP{
+    color:#FFFFFF;
+    max-width: 800px;
+    margin: 20px auto 60px auto;
+    font-size: 20px;
+    font-weight: 200;
+    
+}
+
+.productPageH3{
+    margin: 80px 0 0 20px;
+    color:#E79C10;
 }
 
 .footerUl{
@@ -107,6 +226,14 @@ footer hr {
     margin-bottom: 40px;
 }
 
+.btn{
+    font-family: 'Didact Gothic', sans-serif;
+    margin: 40px auto;
+    display: block;
+    width: 200px;
+}
+
+
 p.about{
     color:#FFFFFF;
     max-width: 800px;
@@ -114,6 +241,13 @@ p.about{
     font-size: 20px;
     font-weight: 200;
     
+}
+
+p.headerAbout{
+    font-size: 24px;
+    max-width: 1200px;
+    margin-bottom: 80px;
+    text-align: center;
 }
 
 
@@ -162,18 +296,27 @@ p.kontaktOssInformasjonP{
     margin: 20px 10%;
 }
 
+a h3:hover{
+    border: 0;
+    text-decoration: underline #D53A33;
+}
+
 h3.kontaktOssInformasjonH3{
     font-size: 32px;
     margin-top: 0;
     padding-top:0;
 }
 
+
+
+
 .form-group, .radio{
     color:#FFFFFF;
-    width: 80%;
+    max-width: 1200px;
     margin-left:10%;
-    font-size: 24px;
+    font-size: 20px;
 }
+
 
 h1{
     font-family: 'Montserrat', sans-serif;
@@ -195,6 +338,7 @@ h2{
 
 h2.h2KontaktOss{
     margin-top: 80px;
+    position: relative;
 }
 h3{
     font-family: 'Montserrat', sans-serif;
@@ -240,22 +384,27 @@ h4{
     top: 45px;
     font-weight: bold;
     font-size: 20px;
+    text-align: center;
 }
   /* Make the image fully responsive */
   .carousel-inner img {
       width: 100%;
       height: 100%;
   }
+
+    .carousel-indicators {
+        z-index: 1;
+  }
 body{
     color: #262626;
 }
 text-center{
-    background-color: #FFF;
+    background-color: #FFFFFF;
 }
 .navigation {
   height: 90px;
   background: #F9f9f9;
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   width: 100%;
 margin: 0;
@@ -286,7 +435,6 @@ margin: 0;
 }
 
 .FAQMainPage{
-    max-width: 800px;
     margin: 30px auto 10px auto;
 }
 
@@ -336,6 +484,10 @@ p.pPortrait{
     margin: 0 20px;
 }
 
+.portraitText{
+    width: 66%;
+}
+
 /* product */
 .productA:hover{
     text-decoration: none;
@@ -344,15 +496,130 @@ p.pPortrait{
 .productP{
     margin-top: 30px;
     font-size: 20px;
+    
+}
+
+
+.productPageInniButtonP{
+    color:#FFFFFF;
+    max-width: 800px;
+    margin: 10px auto 10px auto;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+a.productPageReadMoreA:link,
+a.productPageReadMoreA:hover,
+a.productPageReadMoreA:active,
+a.productPageReadMoreA{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #E79C10;
+    padding: 10px 40px;
+    color: #262626;
+}
+
+
+a.productPageReadMoreA:hover{
+    text-decoration: underline;
+}
+
+.productPageTable{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.productPageTable tr td{
+    font-size: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #a1a1a1;
+    text-align: center;
+}
+
+.productPageTable tr td.productPageTdLeft{
+    text-align: left;
+    padding-left: 30px;
+    width: 60%;
+    color:#FFFFFF;
+}
+
+.productPageTable tr td.productPageTdRight{
+    text-align: center;
+    max-width: 40%;
+    color:#FFFFFF;
+}
+
+
+.productPageUl li{
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 20px 30px;
+}
+
+.productPageUl{
+    max-width: 800px;
+    margin: 20px auto;
+    
+}
+
+.productPageShowMoreButton{    
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E79C10;
+    border: 0;
+    font-size: 24px;
+    padding: 10px 40px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.productPageButton{    
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E79C10;
+    border: 0;
+    font-size: 20px;
+    padding: 10px 40px;
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+}
+
+.productPageButtonA{    
+    color:#262626;
+}
+
+
+.productPageButtonA:hover{    
+    color:#262626;
+}
+
+.productPageReaMoreDiv{
+    max-width: 300px;
+    margin: 80px auto 0 auto;
+    height: 50px;
+}
+
+.productPageA{
+    color: #E79C10;
+}
+
+
+.productPageA:hover{
+    color: #E79C10;
 }
 
 .mainPageReferanceA{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 30px;
+    width: 250px;
+    display: block;
     background-color: #E79C10;
     padding: 10px 40px;
     color: #262626;
+    text-align: center;
     
 }
 
@@ -362,8 +629,8 @@ p.pPortrait{
 }
 
 .mainPageReferanceDiv{
-    width: 200px;
-    margin: 0 auto;
+    width: 250px;
+    margin: 40px auto;
     height: 50px;
 }
 
@@ -420,7 +687,9 @@ nav ul li ul li a {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
-
+.cbg-ig-grid-A:hover{
+    text-decoration: underline #D53A33;
+}
 
 .nav-dropdown-text {
     padding-top: 15px;
@@ -444,24 +713,31 @@ nav ul li ul li a {
     background-color: #262626; 
     width: 100%; 
     top:90px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .sub-menu ul{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 0 0 0;
+    
 }
 .sub-menu ul li{
     text-align: center;
     width: 32.7%;
     display: inline-block;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .sub-menu ul li a,
 .sub-menu ul li a:hover{
     color: #f1f1f1;
     font-family: 'Montserrat', sans-serif;
+}
+
+.sub-menu-extra-space{
+    display: block;
+    height: 130px;
 }
 
 
@@ -591,7 +867,7 @@ nav ul li ul li a {
 }
 
 /* anchor style */
-.cbp-ig-grid li > a {
+.cbp-ig-grid li > a.cbp-grid-a {
 	display: block;
 	height: 100%;
 	-webkit-transition: background 0.2s;
@@ -628,6 +904,7 @@ nav ul li ul li a {
 .img-grid{
     max-width:80%; 
     max-height: 80%;
+    vertical-align: middle;
 }
 
 /**
@@ -673,7 +950,7 @@ nav ul li ul li a {
 	display: inline-block;
 	font-size: 1em;
 	letter-spacing: 1px;
-	color: #fff;
+	color: #ffffff;
 	-webkit-transform: translateY(10px);
 	-moz-transform: -moz-translateY(10px);
 	-ms-transform: -ms-translateY(10px);
@@ -771,7 +1048,7 @@ nav ul li ul li a {
 .img-grid-referansar{
     max-width:80%; 
     max-height: 80%;
-    margin-top: 10%;
+    vertical-align: middle;
 }
 
 /**
@@ -817,7 +1094,7 @@ nav ul li ul li a {
 	display: inline-block;
 	font-size: 1em;
 	letter-spacing: 1px;
-	color: #fff;
+	color: #ffffff;
 	-webkit-transform: translateY(10px);
 	-moz-transform: -moz-translateY(10px);
 	-ms-transform: -ms-translateY(10px);
@@ -837,35 +1114,21 @@ nav ul li ul li a {
 	transform: translateY(0px);
 }
 
-/* Hover styles */ /**
 
-.cbp-ig-grid li > a:hover {
-	background-color: transparent;
+.avtiveMenu{
+    color: #D53A33 !important;
 }
 
-.cbp-ig-grid li > a:hover .cbp-ig-icon {
-	-webkit-transform: translateY(10px);
-	-moz-transform: translateY(10px);
-	-ms-transform: translateY(10px);
-	transform: translateY(10px);
+.activeSubMenu{
+    color: #E79C10 !important;
+}
+.activeSubMenu:before{
+    content: "▸";
+}
+.activeSubMenu:after{
+    content: "◂";
 }
 
-.cbp-ig-grid li > a:hover .cbp-ig-icon:before,
-.cbp-ig-grid li > a:hover .cbp-ig-title {
-	color: #fff;
-}
-
-.cbp-ig-grid li > a:hover .cbp-ig-title {
-	-webkit-transform: translateY(-30px);
-	-moz-transform: translateY(-30px);
-	-ms-transform: translateY(-30px);
-	transform: translateY(-30px);
-}
-
-.cbp-ig-grid li > a:hover .cbp-ig-title:before {
-	background: #D53A33;
-	margin-top: 80px;
-} **/
 /*main page media querry grid*/
 
 @media screen and (max-width: 62.75em) {
@@ -875,7 +1138,7 @@ nav ul li ul li a {
 
 	/* reset the grid lines */
 	.cbp-ig-grid li:nth-child(-n+3){
-		border-top: 1px solid #ddd;
+		border-top: 1px solid #dddddd;
 	}
 
 	.cbp-ig-grid li:nth-child(3n-1),
@@ -888,7 +1151,7 @@ nav ul li ul li a {
 	}
 
 	.cbp-ig-grid li:nth-child(2n-1) {
-		box-shadow: 1px 0 0 #ddd;
+		box-shadow: 1px 0 0 #dddddd;
 	}
 }
 
@@ -945,7 +1208,7 @@ nav ul li ul li a {
 	}
 
 	.cbp-ig-grid-referansar li:nth-child(2n-1) {
-		box-shadow: 1px 0 0 #ddd;
+		box-shadow: 1px 0 0 #dddddd;
 	}
 }
 
@@ -987,7 +1250,7 @@ nav ul li ul li a {
 
   nav {
     width: 100%;
-    margin-top: -8px;
+    margin-top: -27px;
   }
   nav ul {
     display: none;
@@ -1003,12 +1266,17 @@ nav ul li ul li a {
     padding-left: 50px;
   }
     
+    .nav-mobile{
+        margin-top: -5px;
+    }
+    
   .nav-dropdown {
     position: static;
   }
 
     .navigation{
         font-size: 4em;
+    z-index: 3;
     }  
     
     .nav-dropdown-text {
@@ -1019,6 +1287,16 @@ nav ul li ul li a {
     
     ul li a{
         font-size: 0.5em;
+    }
+    
+    .brandLogo{
+        width: 50px;
+        height: 20px;
+    }
+    
+    .brand{
+        margin-top:-20px;
+        padding-top: 0;
     }
     
     .about{
@@ -1059,31 +1337,107 @@ nav ul li ul li a {
 }
     
     
-    nav ul li a,
+nav ul li a,
 nav ul li a:visited {
   display: block;
   padding: 0 20px;
   line-height: 45px;
-  background: url(/image/graphics/transparentNav.png);
+  background: #f9f9f9;
   color: #262626;
   text-decoration: none;
+    margin-top: -2px;
 }
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  background: url(/image/graphics/transparentNav.png);
-  color: #1a1a1a;
+  background: #f9f9f9;
+  color: #D53A33;
+}
+    
+    
+.FAQPageButton{
+    width: 200px;
 }
 
+
+    .binnestrek:before{
+        content:"-";
+    }
     
+    .spanSpace:before{
+        content: " ";
+    }
+    .FAQContent{
+        margin: 20px auto;
+    }
+    
+    .form-group, .radio{
+        margin-left: 0;
+}
+    
+    .portrait{
+        height: auto;
+        margin: 0 auto 30px auto;
+    }
+    
+    .portraitText{
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        border-bottom: 2px solid #a1a1a1;
+    }
+    .textRight{
+        text-align: left;
+    }
+    
+    .portraitImg{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .cbp-ig-title-referansar{
+        font-size: 2.5em!important;
+    }
+    .cbp-ig-category-referansar{
+        font-size: 1.75em!important;
+    }
+    
+        .sub-menu{
+    top:70px;
+}
+.sub-menu ul li{
+    width: 100%;
+    display: inline-block;
+    float: left;
+}
+
+.sub-menu ul li a,
+.sub-menu ul li a:hover{
+    margin: 0;
+    color: #f1f1f1;
+    font-size:14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sub-menu-extra-space{
+    display: block;
+    height: 90px;
+    }
+    
+    .width800{
+        width: 75%;
+    }
+    
+    footer div.container div.row{
+        padding-left: 20px;
+    }
 }
 
 @media screen and (min-width: 769px) {
   .nav-list {
     display: block !important;
   }
-    
- 
 }
+ 
+
 #nav-toggle {
   position: absolute;
   left: 0px;
@@ -1098,7 +1452,7 @@ nav ul li a:visited:hover {
   border-radius: 1px;
   height: 9px;
   width: 50px;
-  background: #2276B2;
+  background: #D53A33;
   position: absolute;
   display: block;
   content: '';

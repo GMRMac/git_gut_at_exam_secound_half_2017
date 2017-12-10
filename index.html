@@ -11,12 +11,21 @@
             <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">  
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110902792-1"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-110902792-1');
+            </script>
         </head>
         <body>
             <section class="navigation">
                 <div class="nav-container">
                     <div class="brand">     
-                        <a href="index.html"><img src="image/graphics/MainLogov2.svg" height="70" style="position:relative; left:-20px;" alt="Infotech logo"></a>
+                        <a href="index.html"><img class="brandLogo" src="image/graphics/MainLogov2.svg" height="70" style="position:relative; left:-20px;" alt="Infotech logo"></a>
                     </div>
                     <nav>
                         <div class="nav-mobile">
@@ -24,7 +33,7 @@
                         </div>
                         <ul class="nav-list" >
                             <li>
-                                <a href="index.html"class="liIconBottom">Hjem</a>
+                                <a href="index.html"class="liIconBottom avtiveMenu">Hjem</a>
                             </li>
                             <li>
                                 <a href="Produkter/index.html" class="liIconBottom">Produkter og tenester</a>
@@ -35,10 +44,10 @@
                         </ul>
                         <ul class="nav-list" >
                             <li class="liIconTop">
-                                <a href="FAQ/index.html"><img src="image/graphics/questionmarkIcon.svg" height="30" class="iconTop">Spørsmål?</a>
+                                <a href="../FAQ/index.html">Spørsmål?</a>
                             </li>
                             <li class="liIconTop">
-                                <a href="#!"><img src="image/graphics/loginnIcon.svg" height="30" class="iconTop">Logg inn</a>
+                                <a class="cbg-ig-grid-A" href="#!">Logg inn</a>
                             </li>
                         </ul>
                     </nav>
@@ -88,95 +97,110 @@
             <!-- SLIDESHOW STOPS HERE!!! --> 
             <div class="container">
                 <h2>Kort om oss</h2>
-                <p class="about">Infotech AS ble etablert i 1993. Vår hovedvirksomhet er konsulenttjenester, rådgivning og utvikling av skreddersydde IT-løsninger. Vi har lang erfaring og er en samarbeidspartner som løser de fleste utfordringer</p>                
+                <p class="about headerAbout">Infotech AS ble etablert i 1993. Vår hovedvirksomhet er konsulenttjenester, rådgivning og utvikling av skreddersydde IT-løsninger. Vi har lang erfaring og er en samarbeidspartner som løser de fleste utfordringer</p>                
                 <h3>Arbeidsplattform</h3>
                 <p class="about">Vår spesialisering er PC-løsninger for Microsoft Windows plattformene. Mesteparten av vår programvareutvikling er basert på Microsofts.NET teknologi med Microsoft Visual Studio.NET som det primære utviklingsverktøy. Med våre web-servere tilbyr vi tradisjonelle og skreddersydde web-tjenester.</p>                
                 <h2>Produkter og tenester</h2>
                 <div class="row rowProdMainPage">
                     <div class="col-xl-4 col-sm-6">
-                        <a class="productA" href="Produkter/kortleser.html">
-                            <div class="col-sm-12 prodMainPage">
+                        <div class="col-sm-12 prodMainPage">
+                            <a class="productA" href="Produkter/kortleser.html">
                                 <img class="productImgMainPage" src="image/picture/bannerPictureOne.jpeg">
                                 <h3>Byggekortleser</h3>
+                            </a>
                                 <p class="productPMainPage">Med Infotechs spesialutviklede Byggekortleser kan du hente ut all informasjon om hvem som er til stede på byggeplassen. Arbeiderene registerer byggekortet sitt på Byggekortleseren når de kommer og går. Elektronisk bemanningsliste er tilgjengelig på web. </p>
+                        </div>
+                            <div class="mainPageReferanceDiv">
+                                <a class="mainPageReferanceA" href="Produkter/kortleser.html">Les mer</a>
                             </div>
-                        </a>
                     </div>
-                    <div class="col-xl-4 col-sm-6 ">
-                        <a class="productA" href="Produkter/itbase.html">
-                            <div class="col-sm-12 prodMainPage">
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="col-sm-12 prodMainPage">
+                            <a class="productA" href="Produkter/itbase.html">
                                 <img class="productImgMainPage" src="image/picture/bannerPictureOne.jpeg">
-                                <h3>ITBASE prosjektweb</h3>
-                                <p class="productPMainPage">Med vårt webhotell ITBASE Prosjektweb samler du alle dokumentene tilknyttet et byggeprosjekt på internett.
-                                <br><br>
-                                Systemet inneholder en rekke nyttige funksjoner som opplasting av tegninger, revisjonshåndtering, tilgangskontroll og e-post-rapporter.
-                                </p>
+                                <h3>ITBASE prosjektweb</h3></a>
+                            <p class="productPMainPage">Med vårt webhotell ITBASE Prosjektweb samler du alle dokumentene tilknyttet et byggeprosjekt på internett.
+                            <br><br>
+                            Systemet inneholder en rekke nyttige funksjoner som opplasting av tegninger, revisjonshåndtering, tilgangskontroll og e-post-rapporter.
+                            </p>
+                        </div>
+                            <div class="mainPageReferanceDiv">
+                                <a class="mainPageReferanceA" href="Produkter/itbase.html">Les mer</a>
                             </div>
-                        </a>
                     </div>
                     <div class="col-xl-4 col-sm-6 ">
-                        <a class="productA" href="Produkter/konsulenttenester.html">
-                            <div class="col-sm-12 prodMainPage">
+                        <div class="col-sm-12 prodMainPage">
+                            <a class="productA" href="Produkter/konsulenttenester.html">
                                 <img class="productImgMainPage" src="image/picture/bannerPictureOne.jpeg">
                                 <h3>Konsulenttjenester</h3>
-                                <p class="productPMainPage">Infotech AS er en samarbeidspartner med lang erfaring og høy IT-kompetanse. Våre kvalifiserte konsulenter tilbyr rådgiving og utvikling av skreddersydde løsninger.
-                                <br><br>
-                                Infotechs hovedvirksomhet er konsulenttjenester, rådgivning og utvikling av skreddersydde IT-løsninger. Vi har lang erfaring og er en samarbeidspartner som løser de fleste utfordringer.
-                                </p>
+                            </a>    
+                            <p class="productPMainPage">Infotech AS er en samarbeidspartner med lang erfaring og høy IT-kompetanse. Våre kvalifiserte konsulenter tilbyr rådgiving og utvikling av skreddersydde løsninger.
+                            <br><br>
+                            Infotechs hovedvirksomhet er konsulenttjenester, rådgivning og utvikling av skreddersydde IT-løsninger. Vi har lang erfaring og er en samarbeidspartner som løser de fleste utfordringer.
+                            </p>
+                            <div class="mainPageReferanceDiv">
+                                <a class="mainPageReferanceA" href="Produkter/konsulenttenester.html">Les mer</a>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
-                <h2>Ofte stilte spørsmål</h2>
-                <div class="FAQMainPage">
-                    <h3 class="FAQh3">Her kommer det da eit ofte stilt spørsmål?</h3>
-                    <p class="FAQp">Her kjem noko tekst som då skal vere svaret på spørsmålet over. Vanligvis er nokon tå disse svara veldig utfyllandes og lange, medan andre gongar er dei ganske korte, ned til nokon får ord. Derfor må dette "svaret" vera ganske langt og det står noko unyttig her som dette her. Eigentlig overraska at du i det heile gadda å lese so langt sio du leser dette her.</p>
-                </div><div class="FAQMainPage">
-                    <h3 class="FAQh3">Her kommer det da eit ofte stilt spørsmål?</h3>
-                    <p class="FAQp">Her kjem noko tekst som då skal vere svaret på spørsmålet over. Vanligvis er nokon tå disse svara veldig utfyllandes og lange, medan andre gongar er dei ganske korte, ned til nokon får ord. Derfor må dette "svaret" vera ganske langt og det står noko unyttig her som dette her. Eigentlig overraska at du i det heile gadda å lese so langt sio du leser dette her.</p>
-                </div><div class="FAQMainPage">
-                    <h3 class="FAQh3">Her kommer det da eit ofte stilt spørsmål?</h3>
-                    <p class="FAQp">Her kjem noko tekst som då skal vere svaret på spørsmålet over. Vanligvis er nokon tå disse svara veldig utfyllandes og lange, medan andre gongar er dei ganske korte, ned til nokon får ord. Derfor må dette "svaret" vera ganske langt og det står noko unyttig her som dette her. Eigentlig overraska at du i det heile gadda å lese so langt sio du leser dette her.</p>
+                <h2>Mobil app</h2>
+                    
+                    <p class="about headerAbout">Med vår app kan alle som jobber på byggeplassen din enkelt registrere seg inn og ut av prosjektet slik at du får oppdaterte elektroniske oversiktslister som følger kravene i byggherreforskriften, uten at du trenger en fysisk kortleser. </p>
+                    <h3 style="margin-bottom: 40px;">Last ned kortleser appen til din platform her</h3>
+                <div class="downloadAppDiv">
+                    <a  href="https://www.microsoft.com/store/apps/9pmfkp7xqvgb?ocid=badge" target="_blank">
+                        <img class="downloadApp" src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png" alt="Get it from Microsoft" />
+                    </a>
+                    <a href="https://itunes.apple.com/no/app/chkbox/id1091516913?l=nb" target="_blank">
+                        <img class="downloadApp" src="../image/graphics/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.infotech.checkboxapp" target="_blank">
+                        <img class="downloadApp" src="../image/graphics/google-play-badge.svg" alt="">
+                    </a>
                 </div>
+                    <div class="mainPageReferanceDiv">
+                        <a class="mainPageReferanceA" href="../Produkter/mobil.html">Les mer</a>
+                    </div>
                 <h2 class="partnerMainPageH2">Nokre partnarar</h2>
                 <ul class="cbp-ig-grid">
                     <li>
-                        <a href="#!">
+                        <a class="cbg-ig-grid-A" href="#!">
 				        <span class="cbp-ig-icon"><div class="div-img-grid"><img class="img-grid" src="image/logo_finished/JM_GUL.png"></div></span>
                             <h3 class="cbp-ig-title">JM</h3>
                             <span class="cbp-ig-category">Bygg</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#!">
+                        <a class="cbg-ig-grid-A" href="#!">
                             <span class="cbp-ig-icon"><div class="div-img-grid"><img class="img-grid" src="image/logo_finished/bergen_kommune_GUL.png"></div></span>
                             <h3 class="cbp-ig-title">Bergen Kommune</h3>
                             <span class="cbp-ig-category">[stuff]</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#!">
+                        <a class="cbg-ig-grid-A" href="#!">
                             <span class="cbp-ig-icon"><div class="div-img-grid"><img class="img-grid" src="image/logo_finished/AF_GRUPPEN_GUL.png"></div></span>
                             <h3 class="cbp-ig-title">AF GRUPPEN</h3>
                             <span class="cbp-ig-category">[stuff]</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#!">
+                        <a class="cbg-ig-grid-A" href="#!">
                             <span class="cbp-ig-icon"><div class="div-img-grid"><img class="img-grid" src="image/logo_finished/tronheim_kommune_GUL.png"></div></span>
                             <h3 class="cbp-ig-title">Trondheim Kommune</h3>
                             <span class="cbp-ig-category">[stuff]</span>
                         </a>
                     </li>
                     <li>
-                        <a href="!#">
+                        <a class="cbg-ig-grid-A" href="!#">
                             <span class="cbp-ig-icon"><div class="div-img-grid"><img class="img-grid" src="image/logo_finished/Vestbo_GUL.png"></div></span>
                             <h3 class="cbp-ig-title">Vestbo</h3>
                             <span class="cbp-ig-category">[stuff]</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#!">
+                        <a class="cbg-ig-grid-A" href="#!">
                             <span class="cbp-ig-icon"><div class="div-img-grid"><img class="img-grid" src="image/logo_finished/SKLangeland_GUL.png"></div></span>
                             <h3 class="cbp-ig-title">SK Langeland</h3>
                             <span class="cbp-ig-category">Arkitektur</span>
@@ -184,7 +208,7 @@
                     </li>
                 </ul>
                 <div class="mainPageReferanceDiv">
-                    <a class="mainPageReferanceA" href="/KontaktOss/referansar.html">Sjå alle</a>
+                    <a class="mainPageReferanceA" href="KontaktOss/referansar.html">Sjå alle</a>
                 </div>
             </div>
             <footer>
@@ -221,29 +245,27 @@
                             <p class="footerP">Analveien 105 A</p>
                             <p class="footerP">5608 Bergen</p>
                             <p class="footerP">Tlf: 55 27 00 30</p>
-                            <p class="footerP">E-post: <a class="footerA" href="#">post@infotech.no</a></p>
+                            <p class="footerP">E-post: <a class="footerA" href="mailto:post@infotech.no?Subject=Questiion%20to%20Infotech" target="_top">post@infotech.no</a></p>
                         </div>
                         <div class="col-xl-4 col-sm-6">
                             <h4>Brukerstøtte</h4>
-                            <p class="footerP"><a class="footerA" href="#!">Fjernstyring programmer</a></p>
-                            <p class="footerP"><a class="footerA" href="#!">Ofte stilte spørsmål</a></p>
-                            <p class="footerP"><a class="footerA" href="#!">Kontakt oss</a></p>
-                            <p class="footerP"><a class="footerA" href="#!">Kontakt ein medarbeidar</a></p>
-                            <p class="footerP"><a class="footerA" href="#!">Trykk her for kontaktskjema</a></p>
+                            <p class="footerP"><a class="footerA" href="../Produkter/programmer.html">Fjernstyring programmer</a></p>
+                            <p class="footerP"><a class="footerA" href="../FAQ/index.html">Ofte stilte spørsmå</a></p>
+                            <p class="footerP"><a class="footerA" href="KontaktOss/index.html">Kontakt oss</a></p>
+                            <p class="footerP"><a class="footerA" href="KontaktOss/index.html#medarbeidere">Kontakt ein medarbeidar</a></p>
                         </div>
                         <div class="col-xl-4 col-sm-6">
                             <h4>Meny</h4>
-                            <p class="footerP"><a class="footerA" href="#">Hjem</a></p>
-                            <p class="footerP"><a class="footerA" href="#">Produkter og tenester</a></p>
-                            <p class="footerP"><a class="footerA" href="#">Kontakt oss</a></p>
-                            <p class="footerP"><a class="footerA" href="#">Mobil app</a></p>
+                            <p class="footerP"><a class="footerA" href="index.html">Hjem</a></p>
+                            <p class="footerP"><a class="footerA" href="Produkter/index.html">Produkter og tenester</a></p>
+                            <p class="footerP"><a class="footerA" href="KontaktOss/index.html">Kontakt oss</a></p>
+                            <p class="footerP"><a class="footerA" href="Produkter/mobil.html">Mobil app</a></p>
                             <p></p>
                             <p></p>
                         </div>
                     </div>
                 </div>
             </footer>
-            <!-- <div class="whiteSpace" style="height: 300px;"></div> -->
             <script>
                           (function($) {
                       $(function() {
