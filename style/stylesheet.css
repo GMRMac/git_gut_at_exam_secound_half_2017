@@ -125,7 +125,7 @@ img.brandLogo{
     border: 0;
     font-size: 20px;
     padding: 10px 40px;
-    margin: 0 auto;
+    margin: 29px auto;
     display: block;
     width: 300px;
     text-align: center;
@@ -190,7 +190,7 @@ img.brandLogo{
 
 .width800{
     width: 50%;
-    padding: 10px auto 100px auto;
+    padding: 10px 0 100px 0;
 }
 .productPageUndertitle{
     color:#FFFFFF;
@@ -317,6 +317,21 @@ h3.kontaktOssInformasjonH3{
     font-size: 20px;
 }
 
+.form-control{
+    background-color: #e1e1e1;
+    transition: 0.2s;
+}
+
+.form-control:focus{
+    background-color: #ffffff;
+    transition: 0.2s;
+}
+
+
+/* cards */
+.card-deck{
+    margin-top: 25px;
+}
 
 h1{
     font-family: 'Montserrat', sans-serif;
@@ -330,7 +345,7 @@ h2{
     font-weight: bold;
     color: #FFFFFF;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 80px;
     max-width: 100%;
     
@@ -378,6 +393,7 @@ h4{
     float:right;
     position: relative;
     top: -45px;
+    
 }
 .liIconBottom{
     position: relative;
@@ -395,6 +411,21 @@ h4{
     .carousel-indicators {
         z-index: 1;
   }
+
+.carousel-caption{
+        color:#f9f9f9;
+}
+
+.carousel-indicators li{
+    height: 20px;
+    width: 20px;
+    margin: 0 5px 5px 5px;
+    border-radius: 100%;
+}
+
+.carouselP{
+    font-size: 24px;
+}
 body{
     color: #262626;
 }
@@ -431,7 +462,7 @@ margin: 0;
 }
 
 .container{
-    width: 100%;
+    max-width: 1200px;
 }
 
 .FAQMainPage{
@@ -478,10 +509,51 @@ p.FAQp{
     text-align: right;
 }
 
+/* login */
+
+.loginPageTable{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.loginPageTable tr td{
+    font-size: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #a1a1a1;
+    text-align: center;
+}
+
+
+
+.loginPageTable tr td.loginPageTdLeft{
+    text-align: left;
+    padding-left: 30px;
+    width: 60%;
+    color:#FFFFFF;
+}
+
+.loginPageTable tr td.loginPageTdRight{
+    text-align: center;
+    max-width: 40%;
+    color:#FFFFFF;
+}
+
+.FAQProductPage ul li a,
+.FAQProductPage ul li a:hover,
+.FAQProductPage ul li a:hover,
+.FAQProductPage ul li a:active,
+.FAQProductPageul li a:link{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+/* portrait */
+
 p.pPortrait{
     font-size: 20px;
     color: #FFFFFF;
-    margin: 0 20px;
+    margin: 5px 20px;
 }
 
 .portraitText{
@@ -526,7 +598,7 @@ a.productPageReadMoreA:hover{
 }
 
 .productPageTable{
-    max-width: 800px;
+    width: 66%;
     margin: 0 auto;
 }
 
@@ -702,7 +774,7 @@ nav ul li ul li a {
   position: absolute;
   top: 0;
   right: 0;
-  background: transparent: ;
+  background: transparent;
   height: 71px;
   width: 71px;
 }
@@ -779,6 +851,10 @@ nav ul li ul li a {
 .whiteSpace{ 
     height: 90px;
 }
+
+.submenuSpace{
+     height: 25px;
+}    
 
 
 .prodMainPage{
@@ -1042,7 +1118,6 @@ nav ul li ul li a {
 .div-img-grid-referansar{
     width: 100%; 
     height: 200px;
-    padding: auto 0;
 }
 
 .img-grid-referansar{
@@ -1242,6 +1317,21 @@ nav ul li ul li a {
 
 
 
+@media only screen and (min-width: 770px) and (max-width: 1050px) {
+    
+
+    .sub-menu ul li a,
+    .sub-menu ul li a:hover{
+        margin: 0;
+        color: #f1f1f1;
+        font-size:24px;
+        font-family: 'Montserrat', sans-serif;
+    }
+        .FAQContent{
+        margin: 20px auto;
+    }
+}
+
 
 @media only screen and (max-width: 769px) {
   .nav-mobile {
@@ -1320,10 +1410,18 @@ nav ul li ul li a {
     float:none;
     position: relative;
     top:0;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    background-color: #F9F9F9;
+    padding: 20px;
+    margin: 0;
 }
 .liIconBottom{
     position: relative;
     top: 0;
+    font-size: 40px;
+    padding: 20px;
 }
     
     .footerUl{
@@ -1413,7 +1511,7 @@ nav ul li a:visited:hover {
 .sub-menu ul li a:hover{
     margin: 0;
     color: #f1f1f1;
-    font-size:14px;
+    font-size:18px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -1429,6 +1527,13 @@ nav ul li a:visited:hover {
     footer div.container div.row{
         padding-left: 20px;
     }
+    
+    .whiteSpace{ 
+    height: 70px;
+    }
+    .submenuSpace{
+     height: 100px;
+}    
 }
 
 @media screen and (min-width: 769px) {
@@ -1436,6 +1541,8 @@ nav ul li a:visited:hover {
     display: block !important;
   }
 }
+
+
  
 
 #nav-toggle {
